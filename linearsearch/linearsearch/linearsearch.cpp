@@ -36,17 +36,17 @@ void linearsearch()
 	do     //langkah 3
 	{
 		//accept the number to be search 
-		cout << "\n enter the element you want to search ; ";   //langkah 1
+		cout << "\n enter the element you want to search : ";   //langkah 1
 		int item;
 		cin >> item;
 
 		comparison = 0;
 		for (i = 0; i < n; i++)
 		{                                                      //langkah 2 & 4
-			comparison++;
+			comparison++; 
 			if (arr[i] == item)                                // langkah 5 a found
 			{
-				cout << "\n" << item << "found at position " << (i + 1) << endl;
+				cout << "\n" << item << " > found at position " << (i + 1) << endl;
 				break;
 			}
 		}
